@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil
+{% endblock %}
+
+{% block body %}
+	<section id="banner">
+		<h1>Bienvenue sur Kids Learning</h1>
+		<a href="{{path("cours")}}">Découvrir</a>
+	</section>
+
+	<section id="feedback">
+		<p>Aujourd'hui on est le 06/01/2025</p>
+		<div class="temoignages">
+			<div class="feedback_content">
+				<h2>Témoignages</h2>
+				<p>Découvrez ce que les gens disent de notre plateforme</p>
+			</div>
+			<div class="cards container">
+				<div class="card">
+					<div class="card_img">
+						<img src="{{asset('img/parent-1.jpeg')}}" alt="Thérèse Dupont">
+					</div>
+					<div class="card_content">
+						<p class="card_content_top">"Ma fille a beaucoup appris grâce à cette plateforme. Les cours sont très informatifs et faciles à comprendre."</p>
+                        <p class="card_content_bottom"> - Thérèse Dupont</p>
+					</div>
+				</div>
+                <div class="card">
+					<div class="card_img">
+						<img src="{{asset('img/parent-2.jpeg')}}" alt="Jean Curie">
+					</div>
+					<div class="card_content">
+						<p class="card_content_top">"Une excellente ressource pour l'apprentissage en ligne. Je la recommande à tout le monde!"</p>
+                        <p class="card_content_bottom"> - Jean Curie</p>
+					</div>
+				</div>
+                <div class="card">
+					<div class="card_img">
+						<img src="{{asset('img/parent-3.jpeg')}}" alt="Albert Dorne">
+					</div>
+					<div class="card_content">
+						<p class="card_content_top">"Les ressources disponibles sont très utiles et variées. Une plateforme indispensable pour l'éducation."</p>
+                        <p class="card_content_bottom"> - Albert Dorne</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
