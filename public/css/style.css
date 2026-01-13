@@ -341,8 +341,9 @@ ul li a {
 .contact_top p {
     font-family: "Muli";
     text-align: center;
+    font-size: 1.5rem;
     padding-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 
 .formcontact {
@@ -354,21 +355,43 @@ ul li a {
     background-color: white;
     display: flex;
     flex-direction: column;
-}
-
-.formcontact form label, .formcontact form input {
-    margin-right: 2rem;
-    margin-left: 2rem;
-    margin-top: 2rem;
+    text-align: left;
+    padding-bottom: 1rem;
 }
 
 form label {
     font-family: "Muli";
     font-weight: bold;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 
-form input {
-    width: 80%;
-    height: 50px;
+form input, form select {
+    height: 40px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-family: "Nunito";
+}
+
+form textarea {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    height: 100px;
+}
+
+#submit {
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    width: 20%;
+    background-color: #E74C3C;
+    color: white;
+    font-family: "Muli";
+    border: 1px solid black;
+    border-radius: 0.5rem;
 }
 
