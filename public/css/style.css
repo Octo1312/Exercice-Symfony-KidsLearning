@@ -16,7 +16,7 @@
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -70,7 +70,8 @@ ul li a {
     align-items: center;
 }
 
-.footer_container p, .footer_container a {
+.footer_container p,
+.footer_container a {
     font-family: "Muli";
     color: white;
 }
@@ -98,9 +99,12 @@ ul li a {
 #banner h1 {
     font-family: "Nunito";
     color: #2C3E50;
-    font-size: 5rem;
+    font-size: 6rem;
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 4rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    text-shadow: white 1px 1px;
 }
 
 #banner a {
@@ -110,3 +114,261 @@ ul li a {
     text-decoration: none;
     border-radius: 0.5rem;
 }
+
+#feedback {
+    background-color: #ECF0F1;
+    padding-bottom: 5rem;
+}
+
+.date {
+    font-family: "Muli";
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+#feedback h2 {
+    font-family: "Nunito";
+    color: #2C3E50;
+    font-size: 3rem;
+}
+
+.feedback_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.feedback_content p {
+    font-family: "Muli";
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border: white 1px solid;
+    padding-top: 2rem;
+
+}
+
+.card_img {
+    text-align: center;
+    position: relative;
+    height: 40%;
+}
+
+.card_img img {
+    height: 150px;
+    width: 150px;
+    border: 5px white solid;
+    border-radius: 100px;
+    position: relative;
+    bottom: 60%;
+    object-fit: cover;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card_content_top {
+    color: #696466;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-family: "Muli";
+}
+
+.card_content_bottom {
+    color: #2C3E50;
+    font-size: larger;
+    text-align: end;
+    font-family: "Nunito";
+}
+
+#noscours {
+    background-color: #ECF0F1;
+}
+
+.noscours_top {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.noscours_top h2 {
+    font-family: "Nunito";
+    color: #2C3E50;
+    font-size: 3rem;
+}
+
+.noscours_top p {
+    font-family: "Muli";
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.matieres {
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+
+.mat {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border: white 1px solid;
+    padding-bottom: 1rem;
+}
+
+.mat_img {
+    text-align: center;
+}
+
+.mat_img img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    padding: 1rem;
+}
+
+.mat_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.mat_content h3 {
+    font-family: "Nunito";
+}
+
+.mat_content p {
+    font-family: "Nunito";
+    text-align: center;
+}
+
+.btn {
+    font-family: "Muli";
+    color: white;
+    background-color: #E74C3C;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid;
+    padding: 2rem;
+}
+
+#ressources {
+    background-color: #ECF0F1;
+    padding-bottom: 4rem;
+}
+
+.ressources_top {
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ressources_top h2 {
+    font-family: "Muli";
+    color: #2C3E50;
+    font-size: 3rem;
+}
+
+.ressources_top p {
+    font-family: "Nunito";
+}
+
+.ress {
+    border-bottom: 2px solid #2C3E50;
+}
+
+.ress td {
+    font-family: "Nunito";
+    padding: 0.8rem;
+}
+
+.tab_top {
+    background-color: #2C3E50;
+}
+
+.tab_top td {
+    font-family: "Nunito";
+    color: white;
+}
+
+.video_line {
+    background-color: white;
+}
+
+#contact {
+    background-color: #ECF0F1;
+    padding-bottom: 4rem;
+}
+
+.contact_top h2 {
+    text-align: center;
+    font-family: "Nunito";
+    color: #2C3E50;
+    font-size: 3rem;
+    padding-top: 4rem;
+}
+
+.contact_top p {
+    font-family: "Muli";
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formcontact {
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.formcontact form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontact form label, .formcontact form input {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+form label {
+    font-family: "Muli";
+    font-weight: bold;
+}
+
+form input {
+    width: 80%;
+    height: 50px;
+}
+

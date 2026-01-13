@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>
-			{% block title %}
-			{% endblock %}
+			{% block title %}{% endblock %}
 		</title>
 		<link rel="stylesheet" href="{{asset('css/style.css')}}">
 	</head>
@@ -23,25 +22,33 @@
 				</ul>
 			</nav>
 		</header>
+		{% block banner %}
+			<section id="banner">
+				<h1>Bienvenue sur Kids Learning</h1>
+				<a href="{{path("cours")}}">Découvrir</a>
+			</section>
+		{% endblock %}
 
 		{% block body %}{% endblock %}
+
+
 	</body>
 	<footer>
-		
-			<div class="footer_container">
-				<div class="footer_logo">
-					<img src="{{asset('img/logo.png')}}" alt="Logo">
-				</div>
-				<div class="footer_contact">
-					<p>Nous sommes ici pour répondre à vos questions et inquiétudes.</p>
-					<p>info@kids-learning.fr</p>
-					<p>01 23 45 67 89</p>
-					<a href="{{path("contact")}}">Formulaire de contact</a>
-				</div>
-				<div class="footer_copyright">
-					<p>© 2023 Kids Learning. Tous droits réservés.</p>
-				</div>
+
+		<div class="footer_container">
+			<div class="footer_logo">
+				<img src="{{asset('img/logo.png')}}" alt="Logo">
 			</div>
-		
+			<div class="footer_contact">
+				<p>Nous sommes ici pour répondre à vos questions et inquiétudes.</p>
+				<p>info@kids-learning.fr</p>
+				<p>01 23 45 67 89</p>
+				<a href="{{path("contact")}}">Formulaire de contact</a>
+			</div>
+			<div class="footer_copyright">
+				<p>© 2023 Kids Learning. Tous droits réservés.</p>
+			</div>
+		</div>
+
 	</footer>
 </html>

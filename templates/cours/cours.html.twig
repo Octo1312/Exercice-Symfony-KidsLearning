@@ -1,6 +1,45 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
+{% block title %}Cours{% endblock %}
 
 {% block body %}
+<section id="noscours">
+    <div class="noscours_top">
+        <h2>Nos Cours</h2>
+        <p>Apprenez à votre rythme avec nos cours en ligne</p>
+    </div>
+    <div class="matieres container">
+        <div class="matieres container">
+            <div class="mat">
+                <div class="mat_img">
+                    <img src="{{asset('img/maths.jpeg')}}" alt="Tableau élève craie">
+                </div>
+                <div class="mat_content">
+                    <h3>Mathématiques</h3>
+                    <p>Explorez les concepts fondamentaux et avancés des mathématiques et devenez maître des nombres.</p>
+                    <a class="btn" href="{{asset("contact")}}">Démarrer l'apprentissage</a>
+                </div>
+            </div>
+            <div class="mat">
+                <div class="mat_img">
+                    <img src="{{asset('img/science.jpeg')}}" alt="Experimentation science">
+                </div>
+                <div class="mat_content">
+                    <h3>Sciences</h3>
+                    <p>Découvrez les mystères de l'univers de la biologie moléculaire à la physique quantique.</p>
+                    <a class="btn" href="{{asset("contact")}}">Démarrer l'apprentissage</a>
+                </div>
+            </div>
+            <div class="mat">
+                <div class="mat_img">
+                    <img src="{{asset('img/literature.jpeg')}}" alt="litterature">
+                </div>
+                <div class="mat_content">
+                    <h3>Littérature</h3>
+                    <p>Parcourez les oeuvres des plus grands auteurs, poètes, et dramaturges de l'histoire.</p>
+                    <a class="btn" href="{{asset("contact")}}">Démarrer l'apprentissage</a>
+                </div>
+            </div>
+        </div>
+</section>
 {% endblock %}
